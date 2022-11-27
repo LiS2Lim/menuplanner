@@ -1,5 +1,7 @@
-from django.shortcuts import render
+from django.views.generic import ListView
+from .models import Photo
 
-# Create your views here.
-def index(req):
-    return render(req, 'index.html', {'data':'data'})
+class PhotoListView(ListView):
+    model = Photo
+    template_name = "index.html"
+    context_object_name = "photos"

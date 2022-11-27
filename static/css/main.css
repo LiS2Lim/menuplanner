@@ -35,10 +35,37 @@ nav .menu li a:hover {
 	color:#fff;
 }
 
-section {
+.section {
 	padding:20px 20px 20px 220px;
 }
 
-p {
-	color:#ff0000;
+.container {
+	display:flex;
+	flex-wrap:wrap;
 }
+
+.deck {
+	border: 1px solid #000;
+	box-sizing:border-box;
+	margin:1px;
+}
+
+.card {
+	width:300px;
+	height:200px;
+	margin:20px;
+	background-size:cover;
+}
+
+.card-body {
+	justify-content:center;
+}
+
+.card-name {
+	color:#000;
+}
+
+.card-tag {
+	color:#ccc;
+}
+
