@@ -1,0 +1,15 @@
+{% extends 'global_menu.html' %}
+{% block body %}
+<div class="container random">
+	<img src="{{ photo.image.url }}" height="600px" />
+	<p>{{ photo.created_at }}</p>
+	<h4>{{ photo.name }}</h4>
+	<p>
+		{% for tag in photo.tags.all %}
+		#{{ tag }}
+		{% endfor %}
+	</p>
+	<hr/>
+	<p>{{ photo.description|linebreaksbr }}</p>
+</div>
+{% endblock body %}
