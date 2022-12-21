@@ -1,20 +1,20 @@
 {% extends 'base.html' %}
 
 {% block global_menu %}
-<nav>
-	<h1 class='title'>李と林の<br>メニューリスト</h1>
-	<ul class='menu'>
-		<li><a href="{% url 'photo-list' %}">Home</a></li>
-		<li><a href="{% url 'photo-list' %}">Menu list</a></li>
-		<li><a href="javascript:void(0)">Add menu</a></li>
-		<li><a href="{% url 'random' %}">Menu game</a></li>
-	</ul>
-</nav>
+		<nav>
+			<h1 class='title'>李と林の<br>メニューリスト</h1>
+			<ul class='menu'>
+				<li><a href="{% url 'photo-list' %}">Home</a></li>
+				<li><a href="{% url 'photo-list' %}">Menu list</a></li>
+				<li><a href="http://cook.li-lim.com/photo-add">Add menu</a></li>
+				<li><a href="{% url 'random' %}">Menu game</a></li>
+			</ul>
+		</nav>
 {% endblock global_menu %}
 
 {% block bodys %}
-<div class="section">
-	{% block body %}
-	{% endblock body %}
-</div>
+		<div class="section">
+			{% block body %}
+			{% endblock body %}
+		</div>
 {% endblock bodys %}
