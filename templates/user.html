@@ -1,0 +1,5 @@
+<div class="row mb-3">
+	{% if user.is_authenticated %}
+	<button class="btn btn-outline-secondary">{{ user.name }}</button>
+	{% endif %}
+</div>
