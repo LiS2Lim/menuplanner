@@ -9,6 +9,13 @@
 				<li><a href="http://cook.li-lim.com/photo-add">Add menu</a></li>
 				<li><a href="{% url 'random' %}">Menu game</a></li>
 			</ul>
+			<div class="align-self-end">
+				{% if user.is_authenticated %}
+					<button class="btn btn-outline-secondary">Sign-out</button>
+				{% else %}
+					<button class="btn btn-outline-secondary">Sign-in</button>
+				{% endif %}
+			</div>
 		</nav>
 {% endblock global_menu %}
 

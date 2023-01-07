@@ -15,5 +15,6 @@ class PhotoDetailView(DetailView):
     context_object_name = "photo"
 
 def Random(req):
+    print(req.user)
     context = random.choice(Photo.objects.all())
     return render(req, 'random.html',{'photo':context})
